@@ -1,5 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // takes a word, check if the word is palidrome
+  //returns true if word is the same as reversed
+  const wordArray = word.split("")
+  const reversedWordArray = wordArray.reverse()
+  const reversedWord = reversedWordArray.join("")
+  if (word === reversedWord) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
